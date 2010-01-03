@@ -1,0 +1,47 @@
+/*
+Always add mixins first so styles can be overridden as needed. For instance:
+top-bar-inner has a +maxWidth mixin applied, which has a default padding of 0 15px, but
+here additional padding-top specific to the element is also added aftwerward.
+*/
+
+#wrapper
+  :width 100%
+  #top-bar
+    :background = !lightest
+    :border-bottom = "1px solid" !lighter
+    :height 70px
+    :margin-bottom 40px
+    #top-bar-inner
+      +maxWidth
+      :height 67px
+      :padding-top 8px
+      #logo
+        :float left
+        :width 260px
+      .tagline
+        :float left
+        :padding-top 23px
+        :width 200px
+      #nav
+        :float right
+        :padding-top 18px
+        a
+          :margin 0 5px
+  #content
+    +maxWidth
+    +clearfix
+    .tagline
+      :border-bottom = "1px solid" !lighter
+      :border-top = "1px solid " !lighter
+      :margin-bottom 25px
+      :padding 15px 0 5px
+      :text-align center
+    #left
+      :float left
+      :width 360px
+    #right
+      :float left
+      :width 600px
+    .block
+      :min-height 1px
+  #footer

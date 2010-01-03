@@ -1,0 +1,47 @@
+!!!
+%html{:xmlns=>"http://www.w3.org/1999/xhtml", "xml:lang"=>"en", :lang=>"en"}
+  %head
+    %meta{"http-equiv"=>"Content-Type", :content=>"text/html; charset=utf-8"}
+    %title FancyPants
+    %link{:rel=>"stylesheet", :type=>"text/css", :href=>"/stylesheets/style.css", :media=>"screen"}
+  %body
+    #wrapper
+      #top-bar
+        #top-bar-inner
+          #logo
+            FancyPants
+          .tagline
+            is a theme.
+          #nav
+            %a{:href=>"/"} Home
+            %a{:href=>"/"} About
+            %a{:href=>"/"} Contact
+      #content
+        %form
+          %fieldset
+            %p
+              %label
+                User Name:
+              %input{:type=>"text"}
+            %p
+              %label  
+                Passowrd:
+              %input{:type=>"password"}
+            %p
+              %label  
+                I agree
+              %input{:type=>"checkbox"}
+            %p
+              %label  
+                This one
+              %input{:type=>"radio", :name=>"radio_name"}
+            %p
+              %label  
+                This one
+              %input{:type=>"radio", :name=>"radio_name"}
+            %p
+              %input{:type=>"file"}
+          %p
+            %input{:type=>"submit"}
+            %input{:type=>"reset"}
+          

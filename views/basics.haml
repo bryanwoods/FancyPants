@@ -44,14 +44,14 @@
           %p
             %input.submit{:type=>"submit"}
             %input.reset{:type=>"reset"}
-        %table{:summary=>"This is an example of what a table would look like in FancyPants, which is borrowed from the HTML4 Spec.", :title=>"Cups of Coffee consumed by each senator"}
+        %table.alternating{:summary=>"This is an example of what a table would look like in FancyPants, which is borrowed from the HTML4 Spec.", :title=>"Cups of Coffee consumed by each senator"}
           %caption Cups of coffee consumed by each senator
           %tr
             %th Name
             %th Cups
             %th Type of Coffee
             %th Sugar?
-          %tr
+          %tr.even
             %td T. Sexton
             %td 10
             %td Espresso

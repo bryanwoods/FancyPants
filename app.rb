@@ -4,9 +4,9 @@ require 'rubygems'
 require 'sinatra'
 require 'haml'
 
-get '/stylesheets/style.css' do
+get '/stylesheets/:name.css' do
   content_type 'text/css', :charset => 'utf-8'
-  sass :style
+  sass :"stylesheets/#{params[:name]}"
 end
 
 get '/' do

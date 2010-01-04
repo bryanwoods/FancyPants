@@ -3,6 +3,9 @@
   %head
     %meta{"http-equiv"=>"Content-Type", :content=>"text/html; charset=utf-8"}
     %title FancyPants
+    %link{:title=>"Home", :type=>"text/html", :rel=>"Home", :href=>"/"}
+    %link{:title=>"About", :type=>"text/html", :rel=>"About", :href=>"/about"}
+    %link{:title=>"Contact", :type=>"text/html", :rel=>"Contact", :href=>"/contact"}
     %link{:rel=>"stylesheet", :type=>"text/css", :href=>"/stylesheets/style.css", :media=>"screen"}
   %body
     #wrapper
@@ -14,8 +17,8 @@
             is a theme.
           #nav
             %a{:href=>"/"} Home
-            %a{:href=>"#"} About
-            %a{:href=>"#"} Contact
+            %a{:href=>"/about"} About
+            %a{:href=>"/contact"} Contact
       #content
         .tagline
           %h1 Hello there, my friend.

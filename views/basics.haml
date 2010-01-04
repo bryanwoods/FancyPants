@@ -17,6 +17,8 @@
             %a{:href=>"/"} About
             %a{:href=>"/"} Contact
       #content
+      //Unfortunately, IE6 does not support attribute selectors, so we have to use classes
+      //Is it just me or did we make really sturdy computers back then?
         %form
           %fieldset
             %p
@@ -30,18 +32,39 @@
             %p
               %label  
                 I agree
-              %input{:type=>"checkbox"}
+              %input.checkbox{:type=>"checkbox"}
             %p
               %label  
                 This one
-              %input{:type=>"radio", :name=>"radio_name"}
+              %input.radio{:type=>"radio", :name=>"radio_name"}
             %p
               %label  
                 This one
-              %input{:type=>"radio", :name=>"radio_name"}
+              %input.radio{:type=>"radio", :name=>"radio_name"}
             %p
-              %input{:type=>"file"}
+              %input.file{:type=>"file"}
           %p
-            %input{:type=>"submit"}
-            %input{:type=>"reset"}
+            %input.submit{:type=>"submit"}
+            %input.reset{:type=>"reset"}
+        %table{:summary=>"This is an example of what a table would look like in FancyPants, which is borrowed from the HTML4 Spec.", :title=>"Cups of Coffee consumed by each senator"}
+          %caption Cups of coffee consumed by each senator
+          %tr
+            %th Name
+            %th Cups
+            %th Type of Coffee
+            %th Sugar?
+          %tr
+            %td T. Sexton
+            %td 10
+            %td Espresso
+            %td No
+          %tr
+            %td J. Dinnen
+            %td 5
+            %td Decaf
+            %td Yes
+        %a{:href=>"#", :title=>"This is a link to nowhere"}
+          Link
           
+            
+        

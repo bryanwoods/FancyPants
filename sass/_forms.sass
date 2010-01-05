@@ -1,9 +1,33 @@
 form
   fieldset
-    p
     label
+      :font-weight bold
     input
-
+      :border = "1px solid" !normal
+      :font-size 1em
+      :height 15px
+      :padding 5px
+      :width 100%
+      &:focus
+        :background #FFFBE2
+    p
+      &.checkbox
+        +clearfix
+        label
+          :float left
+        input
+          :float left
+          :width 25px
+      &.radio
+        +clearfix
+        label
+          :float left
+        input
+          :float left
+          :width 25px
+      &.file
+        input
+          :border none
 
 !alternating_table_color = !light
 !table_border = "1px solid" !normal

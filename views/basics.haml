@@ -21,26 +21,26 @@
           %fieldset
             %p
               %label
-                User Name:
+                User Name
               %input{:type=>"text"}
             %p
               %label  
-                Passowrd:
+                Password
               %input{:type=>"password"}
-            %p
-              %label  
+            %p.checkbox
+              %input{:type=>"checkbox"}
+              %label 
                 I agree
-              %input.checkbox{:type=>"checkbox"}
-            %p
+            %p.radio
+              %input{:type=>"radio", :name=>"radio_name"}
               %label  
                 This one
+            %p.radio
               %input.radio{:type=>"radio", :name=>"radio_name"}
-            %p
               %label  
                 This one
-              %input.radio{:type=>"radio", :name=>"radio_name"}
-            %p
-              %input.file{:type=>"file"}
+            %p.file
+              %input{:type=>"file"}
           %p
             %input.submit{:type=>"submit"}
             %input.reset{:type=>"reset"}

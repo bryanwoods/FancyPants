@@ -4,6 +4,7 @@ top-bar-inner has a +maxWidth mixin applied, which has a default padding of 0 15
 here additional padding-top specific to the element is also added aftwerward.
 */
 
+//basic layout elements
 #wrapper
   :width 100%
   #top-bar
@@ -44,3 +45,11 @@ here additional padding-top specific to the element is also added aftwerward.
     .block
       :min-height 1px
   #footer
+  
+//content elements
+.content
+  +clearfix
+  :border 1px solid #ccc
+  :margin 25px 0
+  :padding 10px
+  :width 100%

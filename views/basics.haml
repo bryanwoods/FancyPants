@@ -17,6 +17,8 @@
             %a{:href=>"/"} About
             %a{:href=>"/"} Contact
       #content
+        /form stuff
+        %h1 Some form stuffs
         %form
           %fieldset
             %p
@@ -44,7 +46,148 @@
           %p
             %input.submit{:type=>"submit"}
             %input.reset{:type=>"reset"}
-        %table.alternating{:summary=>"This is an example of what a table would look like in FancyPants, which is borrowed from the HTML4 Spec.", :title=>"Cups of Coffee consumed by each senator"}
+        /content table
+        %h1 Content Table
+        %table.content.alternating{:summary=>"This is an example of a table that could be used for content administration", :title=>"Content Table Example"}
+          %tr
+            %th.checkbox
+              %input{:type=>"checkbox"}
+            %th Column 1
+            %th Column 2
+            %th Column 3
+            %th Column 4
+            %th Column 5
+          %tr.even
+            %td.checkbox
+              %input{:type=>"checkbox"}
+            %td Lorem ipsum dolor
+            %td 
+              %a{:href=>"#"} 
+                Sit arnet
+            %td Consectetur adipiscing
+            %td Donec tortor diam
+            %td
+              %a{:href=>"#"}
+                edit
+              %a{:href=>"#"}
+                delete
+              %a{:href=>"#"}
+                settings
+          %tr
+            %td.checkbox
+              %input{:type=>"checkbox"}
+            %td Lorem ipsum dolor
+            %td 
+              %a{:href=>"#"} 
+                Sit arnet
+            %td Consectetur adipiscing
+            %td Donec tortor diam
+            %td
+              %a{:href=>"#"}
+                edit
+              %a{:href=>"#"}
+                delete
+              %a{:href=>"#"}
+                settings
+          %tr.even
+            %td.checkbox
+              %input{:type=>"checkbox"}
+            %td Lorem ipsum dolor
+            %td 
+              %a{:href=>"#"} 
+                Sit arnet
+            %td Consectetur adipiscing
+            %td Donec tortor diam
+            %td
+              %a{:href=>"#"}
+                edit
+              %a{:href=>"#"}
+                delete
+              %a{:href=>"#"}
+                settings
+          %tr
+            %td.checkbox
+              %input{:type=>"checkbox"}
+            %td Lorem ipsum dolor
+            %td 
+              %a{:href=>"#"} 
+                Sit arnet
+            %td Consectetur adipiscing
+            %td Donec tortor diam
+            %td
+              %a{:href=>"#"}
+                edit
+              %a{:href=>"#"}
+                delete
+              %a{:href=>"#"}
+                settings   
+          %tr.even
+            %td.checkbox
+              %input{:type=>"checkbox"}
+            %td Lorem ipsum dolor
+            %td 
+              %a{:href=>"#"} 
+                Sit arnet
+            %td Consectetur adipiscing
+            %td Donec tortor diam
+            %td
+              %a{:href=>"#"}
+                edit
+              %a{:href=>"#"}
+                delete
+              %a{:href=>"#"}
+                settings
+          %tr
+            %td.checkbox
+              %input{:type=>"checkbox"}
+            %td Lorem ipsum dolor
+            %td 
+              %a{:href=>"#"} 
+                Sit arnet
+            %td Consectetur adipiscing
+            %td Donec tortor diam
+            %td
+              %a{:href=>"#"}
+                edit
+              %a{:href=>"#"}
+                delete
+              %a{:href=>"#"}
+                settings
+          %tr.even
+            %td.checkbox
+              %input{:type=>"checkbox"}
+            %td Lorem ipsum dolor
+            %td 
+              %a{:href=>"#"} 
+                Sit arnet
+            %td Consectetur adipiscing
+            %td Donec tortor diam
+            %td
+              %a{:href=>"#"}
+                edit
+              %a{:href=>"#"}
+                delete
+              %a{:href=>"#"}
+                settings
+          %tr
+            %td.checkbox
+              %input{:type=>"checkbox"}
+            %td Lorem ipsum dolor
+            %td 
+              %a{:href=>"#"} 
+                Sit arnet
+            %td Consectetur adipiscing
+            %td Donec tortor diam
+            %td
+              %a{:href=>"#"}
+                edit
+              %a{:href=>"#"}
+                delete
+              %a{:href=>"#"}
+                settings     
+        /data table    
+        %h1 Data table
+        %table.data.alternating{:summary=>"This is an example of what a table would look like in FancyPants, which is borrowed from the HTML4 Spec.", :title=>"Cups of Coffee consumed by each senator"}
           %caption Cups of coffee consumed by Senators
           %tr
             %th Name

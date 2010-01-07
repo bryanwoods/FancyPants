@@ -43,7 +43,6 @@ table
     :color = !lightest
     :background = !darker
     :padding = !cell_padding
-  tr
   td
     :border-top = !table_border
     :border-right = !table_border
@@ -55,3 +54,11 @@ table
       :background = !alternating_table_color
     td.even
       :background = !alternating_table_color
+  &.content
+    :border none
+    th
+      :background none
+      :border-bottom = 1px solid !normal
+      :color = !darker
+    td
+      :border none

@@ -42,22 +42,26 @@
                     %input{:type=>"checkbox"}
                     %label 
                       I agree
-                %p.radio
-                  %input{:type=>"radio", :name=>"radio_name"}
-                  %label  
-                    This one
-                %p.radio
-                  %input.radio{:type=>"radio", :name=>"radio_name"}
-                  %label  
-                    This one
-                %p.select
-                  %select
-                    %option{:value=>"1"}
-                      Option 1
-                    %option{:value=>"2"}
-                      Option 2
-                %p.file
-                  %input{:type=>"file"}
+                %p
+                  .radio
+                    %input{:type=>"radio", :name=>"radio_name"}
+                    %label  
+                      This one
+                %p
+                  .radio
+                    %input{:type=>"radio", :name=>"radio_name"}
+                    %label  
+                      This one
+                %p
+                  .select
+                    %select
+                      %option{:value=>"1"}
+                        Option 1
+                      %option{:value=>"2"}
+                        Option 2
+                %p
+                  .file
+                    %input{:type=>"file", :class=>"file"}
               %p
                 %input.submit{:type=>"submit"}
                 %input.reset{:type=>"reset"}
@@ -107,35 +111,41 @@
                   .fieldWithErrors 
                     %textarea{:rows=>"5"}
                 %p
-                .checkbox
-                  .fieldWithErrors 
-                    %input{:type=>"checkbox", :class=>"check"}
-                .label
-                  .fieldWithErrors 
-                    %label 
-                      I agree
-                %p.radio
-                  .fieldWithErrors 
-                    %input{:type=>"radio", :name=>"radio_name"}
-                  .fieldWithErrors 
-                    %label  
-                      This one
-                %p.radio
-                  .fieldWithErrors 
-                    %input.radio{:type=>"radio", :name=>"radio_name"}
-                  .fieldWithErrors 
-                    %label  
-                      This one
-                %p.select
-                  .fieldWithErrors 
-                    %select
-                      %option{:value=>"1"}
-                        Option 1
-                      %option{:value=>"2"}
-                        Option 2
-                %p.file
-                  .fieldWithErrors 
-                    %input{:type=>"file", :class=>"file"}
+                  .checkbox
+                    .fieldWithErrors 
+                      %input{:type=>"checkbox", :class=>"check"}
+                  .label
+                    .fieldWithErrors 
+                      %label 
+                        I agree
+                %p
+                  .radio
+                    .fieldWithErrors 
+                      %input{:type=>"radio", :name=>"radio_name"}
+                  .label
+                    .fieldWithErrors 
+                      %label  
+                        This one
+                %p
+                  .radio
+                    .fieldWithErrors 
+                      %input.radio{:type=>"radio", :name=>"radio_name"}
+                  .label  
+                    .fieldWithErrors 
+                      %label  
+                        This one
+                %p
+                  .select
+                    .fieldWithErrors 
+                      %select
+                        %option{:value=>"1"}
+                          Option 1
+                        %option{:value=>"2"}
+                          Option 2
+                %p
+                  .file
+                    .fieldWithErrors 
+                      %input{:type=>"file", :class=>"file"}
               %p
                 %input.submit{:type=>"submit"}
                 %input.reset{:type=>"reset"}

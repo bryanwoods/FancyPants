@@ -3,7 +3,19 @@ Always add mixins first so styles can be overridden as needed. For instance:
 top-bar-inner has a +maxWidth mixin applied, which has a default padding of 0 15px, but
 here additional padding-top specific to the element is also added aftwerward.
 */
+/*
 
+
+//need to implement IE6/7v1 hack.
+#position-fixed
+  :position fixed
+  :top 50%
+  :left 50%
+  :height 50px
+  :width 50px
+  :background #333*/
+  
+  
 //basic layout elements
 #wrapper
   :width 100%
@@ -36,12 +48,14 @@ here additional padding-top specific to the element is also added aftwerward.
       :margin-bottom 25px
       :padding 15px 0 5px
       :text-align center
-    #left
+    #sidebar
       :float left
-      :width 360px
-    #right
+      :width 350px
+      :margin 0 5px
+    #main
       :float left
-      :width 600px
+      :width 590px
+      :margin 0 5px
     .block
       :min-height 1px
   #footer
@@ -52,7 +66,6 @@ here additional padding-top specific to the element is also added aftwerward.
   :border 1px solid #ccc
   :margin 25px 0
   :padding 10px
-  :width 100%
   
 .actions
   :border-top = "1px solid" !light

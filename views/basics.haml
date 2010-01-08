@@ -138,6 +138,7 @@
                         %p
                           You must agree to terms and conditions
                 %p
+                  %br
                   %span.select
                     .fieldWithErrors 
                       %select
@@ -147,12 +148,12 @@
                           Option 2
                       .errorMessage
                         %p
-                          you must select an option
+                          You must select an option
                 %p
                   %span.file
                     .fieldWithErrors 
                       %input{:type=>"file", :class=>"file"}
-                      %span.errorMessage
+                      .errorMessage
                         Please choose a file to upload
             %p
               %br

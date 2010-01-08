@@ -1,9 +1,13 @@
+=formLabel
+  :font-size 1em
+  :font-weight bold
+  
+
 //form elements
 form
   fieldset
     label
-      :font-size 1em
-      :font-weight bold
+      +formLabel
     input
       :border = "1px solid" !normal
       :font-size 1em
@@ -16,25 +20,25 @@ form
       :width 100%
       &:focus
         :background #FFFBE2
-      
-    p
-      &.checkbox
-        +clearfix
-        label
-          :float left
-        input
-          :float left
-          :width 25px
-      &.radio
-        +clearfix
-        label
-          :float left
-        input
-          :float left
-          :width 25px
-      &.file
-        input
-          :border none
+    .checkbox
+      +clearfix
+      :line-height 1.6em
+      label
+        :font-size 0.815em
+        :float left
+      input
+        :float left
+        :width 25px
+    &.radio
+      +clearfix
+      label
+        :float left
+      input
+        :float left
+        :width 25px
+    &.file
+      input
+        :border none
 
 //tables
 !alternating_table_color = !light

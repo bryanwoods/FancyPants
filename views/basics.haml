@@ -37,10 +37,11 @@
                     Text Area
                   %br
                   %textarea{:rows=>"5"}
-                %p.checkbox
-                  %input{:type=>"checkbox"}
-                  %label 
-                    I agree
+                %p
+                  .checkbox
+                    %input{:type=>"checkbox"}
+                    %label 
+                      I agree
                 %p.radio
                   %input{:type=>"radio", :name=>"radio_name"}
                   %label  
@@ -105,9 +106,11 @@
                       Text Area
                   .fieldWithErrors 
                     %textarea{:rows=>"5"}
-                %p.checkbox
+                %p
+                .checkbox
                   .fieldWithErrors 
-                    %input{:type=>"checkbox"}
+                    %input{:type=>"checkbox", :class=>"check"}
+                .label
                   .fieldWithErrors 
                     %label 
                       I agree

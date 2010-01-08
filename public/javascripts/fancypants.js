@@ -1,0 +1,1 @@
+//error message goes away on field focus

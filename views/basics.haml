@@ -66,8 +66,12 @@
                   .file
                     %input{:type=>"file", :class=>"file"}
               %p
-                %input.submit{:type=>"submit"}
-                %input.reset{:type=>"reset"}
+              %br
+                .submit
+                  %input.submit{:type=>"submit"}
+                  or
+                  %a{:href=>"#"}
+                    clear
               
           //forms with errors
           .box
@@ -150,15 +154,19 @@
                     .fieldWithErrors 
                       %input{:type=>"file", :class=>"file"}
               %p
-                %input.submit{:type=>"submit"}
-                %input.reset{:type=>"reset"}
+              %br
+                .submit
+                  %input.submit{:type=>"submit"}
+                  or
+                  %a{:href=>"#"}
+                    clear
               
           .box     
             /content table
             %h1 Content Table
             %table.content.alternating{:summary=>"This is an example of a table that could be used for content administration", :title=>"Content Table Example"}
               %thead
-                %th.checkbox
+                %th
                   %input{:type=>"checkbox"}
                 %th Column 1
                 %th Column 2
@@ -166,7 +174,7 @@
                 %th Column 4
                 %th Column 5
               %tr.even
-                %td.checkbox
+                %td
                   %input{:type=>"checkbox"}
                 %td Lorem ipsum dolor
                 %td 

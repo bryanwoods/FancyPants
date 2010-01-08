@@ -18,7 +18,7 @@
             %a{:href=>"/basics"} Basics
             %a{:href=>"/"} Contact
       #content
-        .content
+        .box
           /form stuff
           %h1 Some form stuffs
           %form
@@ -60,7 +60,7 @@
               %input.submit{:type=>"submit"}
               %input.reset{:type=>"reset"}
               
-        .content      
+        .box     
           /content table
           %h1 Content Table
           %table.content.alternating{:summary=>"This is an example of a table that could be used for content administration", :title=>"Content Table Example"}
@@ -199,8 +199,29 @@
                 %a{:href=>"#"}
                   delete
                 %a{:href=>"#"}
-                  settings     
-          /data table    
+                  settings
+          .actions
+            %p.select
+              %select
+                %option{:value=>"0"}
+                  Choose an action...
+                %option{:value=>"1"}
+                  Edit
+                %option{:value=>"2"}
+                  Delete
+              %input{:type=>"submit", :value=>"Apply to selected"}
+            .paginate
+              .pagination
+                %span.disable.prev_page
+                  &laquo; Previous 
+                %span.current
+                  1 
+                %a{:href=>"#", :rel=>"next"}
+                  2
+                %a{:href=>"#", :class=>"next_page", :rel=>"next"}
+                  Next &raquo;
+          /data table
+        .box      
           %h1 Data table
           %table.data.alternating{:summary=>"This is an example of what a table would look like in FancyPants, which is borrowed from the HTML4 Spec.", :title=>"Cups of Coffee consumed by each senator"}
             %caption Cups of coffee consumed by Senators

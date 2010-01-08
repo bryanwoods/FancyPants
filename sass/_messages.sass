@@ -1,5 +1,10 @@
+.errorMessage
+  :color #FF0000
+  :display none
 .fieldWithErrors
   :line-height 1.6
+  .errorMessage
+    :display block
   input
     :background #F5D1C4
     :padding-right 5px
@@ -16,12 +21,12 @@
 .checkbox, .radio
   :float left
   .fieldWithErrors
-    +clearfix
     :background url("/images/icons/exclamation.png") no-repeat 1% #F5D1C4
     :padding-left 15px
     :width 25px
     :overflow hidden
     input
+      //:padding 10px
       :float left
 .label
   //:float left
@@ -30,23 +35,28 @@
     :height 25px
     :padding-left 0
     label 
+      :font-size 1em
       :background none
       :padding-left 5px
       :height 25px
       :width 60%
       
 .select
-  :width 100px
   .fieldWithErrors
-    :background url("/images/icons/exclamation.png") no-repeat 1% #F5D1C4
-    :padding 5px 0px 5px 20px
-    :width 100%
+    :background url("/images/icons/exclamation.png") no-repeat 1% 20% #F5D1C4
+    :padding 5px 0 0 25px
+  .errorMessage
+    :background #fff
+    :margin-left -25px
     
 .file
   .fieldWithErrors
+    :height 40px
     :background url("/images/icons/exclamation.png") no-repeat 1% #F5D1C4
-    :height 50px
     :padding 5px 5px 5px 25px
+    .errorMessage
+      :margin-left -25px
+      :margin-top 5px
   
 
 //todo: figure out radio/checkbox float problem for errors    

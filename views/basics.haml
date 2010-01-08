@@ -105,55 +105,56 @@
                       User Name
                   .fieldWithErrors  
                     %input{:type=>"text"}
+                    .errorMessage
+                      %p
+                        User name is required
                 %p
                   .fieldWithErrors 
                     %label  
                       Password
                   .fieldWithErrors 
                     %input{:type=>"password"}
+                    .errorMessage
+                      %p
+                        Incorrect password
                 %p
                   .fieldWithErrors 
                     %label
                       Text Area
                   .fieldWithErrors 
                     %textarea{:rows=>"5"}
+                    .errorMessage
+                      %p
+                        Text area is required
                 %p
-                  .checkbox
+                  %span.checkbox
                     .fieldWithErrors 
                       %input{:type=>"checkbox", :class=>"check"}
-                  .label
+                  %span.label
                     .fieldWithErrors 
                       %label 
                         I agree
+                      .errorMessage
+                        %p
+                          You must agree to terms and conditions
                 %p
-                  .radio
-                    .fieldWithErrors 
-                      %input{:type=>"radio", :name=>"radio_name"}
-                  .label
-                    .fieldWithErrors 
-                      %label  
-                        This one
-                %p
-                  .radio
-                    .fieldWithErrors 
-                      %input.radio{:type=>"radio", :name=>"radio_name"}
-                  .label  
-                    .fieldWithErrors 
-                      %label  
-                        This one
-                %p
-                  .select
+                  %span.select
                     .fieldWithErrors 
                       %select
                         %option{:value=>"1"}
                           Option 1
                         %option{:value=>"2"}
                           Option 2
+                      .errorMessage
+                        %p
+                          you must select an option
                 %p
-                  .file
+                  %span.file
                     .fieldWithErrors 
                       %input{:type=>"file", :class=>"file"}
-              %p
+                      %span.errorMessage
+                        Please choose a file to upload
+            %p
               %br
                 .submit
                   %input.submit{:type=>"submit"}

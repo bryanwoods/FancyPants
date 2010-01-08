@@ -64,7 +64,7 @@
           /content table
           %h1 Content Table
           %table.content.alternating{:summary=>"This is an example of a table that could be used for content administration", :title=>"Content Table Example"}
-            %tr
+            %thead
               %th.checkbox
                 %input{:type=>"checkbox"}
               %th Column 1
@@ -204,7 +204,7 @@
           %h1 Data table
           %table.data.alternating{:summary=>"This is an example of what a table would look like in FancyPants, which is borrowed from the HTML4 Spec.", :title=>"Cups of Coffee consumed by each senator"}
             %caption Cups of coffee consumed by Senators
-            %tr
+            %thead
               %th Name
               %th Cups
               %th Type of Coffee

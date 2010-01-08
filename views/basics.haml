@@ -30,46 +30,67 @@
                   %label
                     User Name
                   %input{:type=>"text"}
+                  .errorMessage
+                    %p
+                      User name is required.
                 %p
                   %label  
                     Password
                   %input{:type=>"password"}
+                  .errorMessage
+                    %p
+                      Password is incorrect
                 %p
                   %label
                     Text Area
                   %br
                   %textarea{:rows=>"5"}
+                  .errorMessage
+                    %p
+                      Text area is required
                 %p
-                  .checkbox
+                  %span.checkbox
                     %input{:type=>"checkbox"}
-                  .label
+                  %span.label
                     %label 
                       I agree
+                  .errorMessage
+                    %p
+                      You must agree to terms in order to proceed. 
                 %p
-                  .radio
+                  %span.radio
                     %input{:type=>"radio", :name=>"radio_name"}
-                  .label
+                  %span.label
+                    %label  
+                      This one
+                  .errorMessage
+                    %p
+                      I can't think of a use case where a radio button would need to throw an error.
+                %p
+                  %span.radio
+                    %input{:type=>"radio", :name=>"radio_name"}
+                  %span.label
                     %label  
                       This one
                 %p
-                  .radio
-                    %input{:type=>"radio", :name=>"radio_name"}
-                  .label
-                    %label  
-                      This one
-                %p
-                  .select
+                  %span.select
                     %select
                       %option{:value=>"1"}
                         Option 1
                       %option{:value=>"2"}
                         Option 2
+                    .errorMessage
+                      %p
+                        You must select an option
                 %p
-                  .file
+                  %span.file
                     %input{:type=>"file", :class=>"file"}
+                    .errorMessage
+                      %p
+                        Please select a file
               %p
               %br
-                .submit
+                %span.submit
                   %input.submit{:type=>"submit"}
                   or
                   %a{:href=>"#"}

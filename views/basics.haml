@@ -201,23 +201,26 @@
                 %a{:href=>"#"}
                   settings
           .actions
-            %p.select
-              %select
-                %option{:value=>"0"}
-                  Choose an action...
-                %option{:value=>"1"}
-                  Edit
-                %option{:value=>"2"}
-                  Delete
-              %input{:type=>"submit", :value=>"Apply to selected"}
+            %select
+              %option{:value=>"0"}
+                Choose an action...
+              %option{:value=>"1"}
+                Edit
+              %option{:value=>"2"}
+                Delete
+            %input{:type=>"submit", :value=>"Apply to selected"}
             .paginate
               .pagination
-                %span.disable.prev_page
+                %span.disabled.prev_page
                   &laquo; Previous 
                 %span.current
                   1 
                 %a{:href=>"#", :rel=>"next"}
                   2
+                %a{:href=>"#", :rel=>"next"}
+                  3
+                %a{:href=>"#", :rel=>"next"}
+                  4
                 %a{:href=>"#", :class=>"next_page", :rel=>"next"}
                   Next &raquo;
           /data table

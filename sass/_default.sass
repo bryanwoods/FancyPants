@@ -53,3 +53,27 @@ here additional padding-top specific to the element is also added aftwerward.
   :margin 25px 0
   :padding 10px
   :width 100%
+  
+//paginate styles based on default output of mislav's will_paginate plugin
+.paginate
+  :float right
+  a
+    :border = "1px solid" !light
+    :margin 0 5px
+    :padding 2px 1px 2px 5px
+    :text-decoration none
+    &:hover
+      :background = !link
+      :border-color = !link
+      :color #fff
+  .next_page
+    :background none
+    :border none
+  .current
+    :color #fff
+    :background = !link
+    :padding 2px 1px 2px 5px
+    :margin 0 5px
+  .disabled
+    :border none
+    :color #888

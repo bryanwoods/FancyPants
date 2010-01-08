@@ -20,7 +20,7 @@
       #content
         .box
           /form stuff
-          %h1 Some form stuffs
+          %h1 Forms
           %form
             %fieldset
               %p
@@ -56,6 +56,83 @@
                     Option 2
               %p.file
                 %input{:type=>"file"}
+            %p
+              %input.submit{:type=>"submit"}
+              %input.reset{:type=>"reset"}
+              
+        //forms with errors
+        .box
+          /form stuff
+          %h1 Forms w/errors
+          %p Shows what form inputs look like after throwing rails default errors.
+          #errorExplanation
+            %h2 7 errors prohibited this post from being saved
+            %p
+              There were problems with the following fields:
+            %ul
+              %li
+                User Name can't be blank
+              %li
+                Password can't be blank
+              %li
+                Text Area can't be blank
+              %li
+                Agreement must be accepted
+              %li
+                You must choose an radio button
+              %li
+                You must choose an option
+              %li
+                File can't be blank
+          %form
+            %fieldset
+              %p
+                .fieldWithErrors 
+                  %label
+                    User Name
+                .fieldWithErrors  
+                  %input{:type=>"text"}
+              %p
+                .fieldWithErrors 
+                  %label  
+                    Password
+                .fieldWithErrors 
+                  %input{:type=>"password"}
+              %p
+                .fieldWithErrors 
+                  %label
+                    Text Area
+                %br
+                .fieldWithErrors 
+                  %textarea{:rows=>"5"}
+              %p.checkbox
+                .fieldWithErrors 
+                  %input{:type=>"checkbox"}
+                .fieldWithErrors 
+                  %label 
+                    I agree
+              %p.radio
+                .fieldWithErrors 
+                  %input{:type=>"radio", :name=>"radio_name"}
+                .fieldWithErrors 
+                  %label  
+                    This one
+              %p.radio
+                .fieldWithErrors 
+                  %input.radio{:type=>"radio", :name=>"radio_name"}
+                .fieldWithErrors 
+                  %label  
+                    This one
+              %p.select
+                .fieldWithErrors 
+                  %select
+                    %option{:value=>"1"}
+                      Option 1
+                  %option{:value=>"2"}
+                    Option 2
+              %p.file
+                .fieldWithErrors 
+                  %input{:type=>"file"}
             %p
               %input.submit{:type=>"submit"}
               %input.reset{:type=>"reset"}

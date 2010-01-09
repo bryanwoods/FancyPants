@@ -4,24 +4,16 @@
   :display none
   :font-size 0.815em
 .fieldWithErrors
-  :background url("/images/icons/exclamation.png") no-repeat 0%
+  :background = "url('/images/icons/exclamation.png') no-repeat 1%" !error
   :line-height 1.6
+  :padding 5px
   :font-size 0.815em
-  input
-    :background = !error
-    :padding-right 5px
-  textarea
-    :background = !error
-    :border = "1px solid" !normal
   label
     :padding-left 20px
-  .file
-    :border 0
 
 .checkbox, .radio
   :float left
   .fieldWithErrors
-    :background-color = !error
     :padding-left 15px
     :overflow hidden
       
@@ -29,25 +21,20 @@
   .fieldWithErrors
     :font-size 1.228em
     label 
-      :padding 2px 5px
+      :padding 2px 0px
   .errorMessage
     :font-size 1em
       
 .select
   .fieldWithErrors
-    :background-color = !error
-    :padding 5px 0 5px 25px
+    :padding-left 25px
   .errorMessage
     :font-size 1em
     
 .file
   .fieldWithErrors
-    :background-color = !error
-    :background-position 0% 45%
-    :padding 5px 5px 5px 25px
-    .errorMessage
-      :margin-left -25px
-      :margin-top 10px
+    :background-position 1% 45%
+    :padding-left 25px
 
 #errorExplanation 
   :width 97%

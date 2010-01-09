@@ -1,8 +1,26 @@
+#flashMessage
+  /*set position to "fixed" if you want the message to follow scroll, 
+  or "relative" if you prefer to have it inline.*/
+  :position absolute
+  :top 0
+  :right 0
+  :z-index 10
+  :padding 25px 5px
+  :background #fbf7b1
+  :border-bottom 2px solid #fbec70
+  :text-align center
+  :width 100%
+  :overflow none
+  &.error
+    :background = !error
+    :border-bottom 2px solid #ee1111
+
 //todo: figure out what's up with having to hack the font-sizes
 .errorMessage
   :color = !errorText
   :display none
   :font-size 0.815em
+  
 .fieldWithErrors
   :background = "url('/images/icons/exclamation.png') no-repeat 1%" !error
   :line-height 1.6

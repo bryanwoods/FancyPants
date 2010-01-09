@@ -6,14 +6,18 @@
   :right 0
   :z-index 10
   :padding 25px 5px
-  :background #fbf7b1
-  :border-bottom 2px solid #fbec70
   :text-align center
   :width 100%
   :overflow none
+  &.success
+    :background = !action + #999
+    :border-color = !action - #444
+  &.alert
+    :background #fbf7b1
+    :border-bottom 2px solid #fbec70
   &.error
     :background = !error
-    :border-bottom 2px solid #ee1111
+    :border-color #ee1111
 
 //todo: figure out what's up with having to hack the font-sizes
 .errorMessage

@@ -100,9 +100,9 @@
           .box
             /form stuff
             %h1 Forms w/errors
-            %p Shows what form inputs look like after throwing rails default errors.
+            %p Shows what form inputs look like after throwing rails default errors.  The field specific messages in red text are revealed via jquery when the field blocks are built as specified.
             #errorExplanation
-              %h2 7 errors prohibited this post from being saved
+              %h2 6 errors prohibited this post from being saved
               %p
                 There were problems with the following fields:
               %ul
@@ -114,8 +114,6 @@
                   Text Area can't be blank
                 %li
                   Agreement must be accepted
-                %li
-                  You must choose a radio button
                 %li
                   You must choose an option
                 %li

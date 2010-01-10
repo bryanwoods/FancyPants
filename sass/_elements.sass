@@ -44,11 +44,13 @@ form
 //tables
 !alternating_table_color = !light
 !table_border = "1px solid" !normal
-!cell_padding = 5px 15px
+!cell_padding = 0.5em
 
 table
   :border-bottom = !table_border
   :border-left = !table_border
+  thead
+    :width 100%
   caption
     :color = !darker
     :margin-bottom 10px
@@ -62,19 +64,16 @@ table
     :padding = !cell_padding
   //this class alternates gray and white rows
   &.alternating
-    th.even
+    tr:nth-child(even)
       :background = !alternating_table_color
-    tr.even
-      :background = !alternating_table_color
-    td.even
-      :background = !alternating_table_color
+      
   //this class specifies a content administration table, rather than a data table
   &.content
     :border none
-    :width 99%
+    :width 100%
     th
       :background none
       :border-bottom = "1px solid" !normal
       :color = !darker
     td
-      :border none
+      :border 0

@@ -1,7 +1,7 @@
 /*
-You can set a base color here, ussually something with a medium value, and then tweak
-from there, or you can control colors individually.  The color scheme generator sets
-relative values that are used throughout.
+The easiest way to get a new color scheme is to set a base color here, 
+ussually something with a medium value.  The color scheme is generated
+below based on relative values, and implemented throughout.
 */
 
 //base color
@@ -31,6 +31,15 @@ mustard plug: #A67000
 !lighter = !base + #666
   
 !lightest = !base + #888
+
+/*
+Change this value or the way it is calculated to set a color
+for the main content area, right now it's set to white, but
+you could do something like "!base + #777" etc.
+*/
+
+//content area
+!contentArea = #fff
 
 //links
 !link = !base + #003355 - #111

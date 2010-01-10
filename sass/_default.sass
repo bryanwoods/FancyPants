@@ -17,6 +17,7 @@ here additional padding-top specific to the element is also added aftwerward.
   
 //basic layout elements
 #wrapper
+  :background = !contentArea
   +clearfix
   :width 100%
   #top-bar
@@ -66,7 +67,7 @@ here additional padding-top specific to the element is also added aftwerward.
               a
                 :padding 0.15em 1em
               &.active
-                :background #fff
+                :background = !contentArea
                 :border-bottom 1px solid #fff
                 a
                   :color = !medium

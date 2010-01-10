@@ -42,44 +42,40 @@ here additional padding-top specific to the element is also added aftwerward.
         :padding-top 18px
         a
           :margin 0 10px
+      //tabbed nav for an admin like area
       #tabs
+        +roundedCorners
         :background = !light
         :border-bottom = "1px solid" !light - #111
-        :text-align left
         :height 35px
         :margin-top 67px
-        //corner rounders
-        :-moz-border-radius-topright 7px
-        :-moz-border-radius-topleft 7px
-        :-webkit-border-top-right-radius 7px 
-        :-webkit-border-top-left-radius 7px
-        #primary-nav
+        li
           :float left
+          :display inline
+          :margin-top 5px
+          a
+            :display block
+        #primary-nav
           ul 
             :list-style none
             li
+              +roundedCorners
               :cursor pointer
-              :height 13px
-              :float left
-              :margin-top 0px
               :padding 7px 15px 8px
-              //corner rounders
-              :-moz-border-radius-topright 7px
-              :-moz-border-radius-topleft 7px
-              :-webkit-border-top-right-radius 7px 
-              :-webkit-border-top-left-radius 7px
               &.active
                 :background #fff
                 :border-bottom 1px solid #fff
+              a
+                :padding 0.15em 1em
         #secondary-nav
           :float right
-          //???
-          :margin-top -7px
           ul
             :list-style none
             li
               :float left
               :padding 0 10px
+              a
+                :padding 0.1em 0.5em
         
   #content
     +maxWidth

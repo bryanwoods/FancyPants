@@ -2,22 +2,28 @@
   /*set position to "fixed" if you want the message to follow scroll, 
   or "relative" if you prefer to have it inline.*/
   :position absolute
+  :border-bottom 2px solid
   :top 0
   :right 0
   :z-index 10
-  :padding 10px 5px
+  :padding 15px 5px
   :text-align center
   :width 100%
   :overflow none
+  #close
+    :border 2px solid
+    :cursor pointer
+    :float right
+    :margin-right 10px
+    :margin-top -3px
+    :padding 0 2px 5px
+    :width 15px
   &.success
-    :background = !action + #999
-    :border-color = !action - #444
+    +flash(!success)
   &.alert
-    :background #fbf7b1
-    :border-bottom 2px solid #fbec70
+    +flash(!alert)
   &.error
-    :background = !error
-    :border-color #ee1111
+    +flash(!error)
 
 //todo: figure out what's up with having to hack the font-sizes
 .errorMessage
@@ -61,11 +67,11 @@
 
 #errorExplanation 
   :width 97%
-  :border 2px solid #ee1111
+  :border = "2px solid" !red
   :padding 7px
   :padding-bottom 12px
   :margin-bottom 20px
-  :background-color #F5D1C4
+  :background-color = !error
   h2 
     :text-align left
     +typeSans
@@ -73,7 +79,7 @@
     :padding 10px 5px 10px 15px
     :font-size 12px
     :margin -7px
-    :background-color #ee1111
+    :background-color = !red
     :color #fff
   p 
     :padding 12px 10px 0

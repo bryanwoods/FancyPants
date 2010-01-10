@@ -20,5 +20,23 @@
 
 //error messages
 !error = #F5D1C4
+!red = #ee1111
 !errorText = #FF0000
+
+//alert messages
+!alert = #fbf7b1
+
+//success messages
+!success = #98F395
+
+//flash message color scheme
+=flash(!flashColor)
+  :background = !flashColor
+  :border-color = !flashColor - #666
+  #close
+    :background = !flashColor - #666
+    :border-color = !flashColor - #999
+    :color = !flashColor - #999
+    &:hover
+      :background = !flashColor
   

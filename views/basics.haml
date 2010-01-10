@@ -8,11 +8,11 @@
     %script{:src=>"/javascripts/fancypants.js", :type=>"text/javascript"}
   %body
     #flashMessage.alert
-      This is a flash message with the "alert" class.  jQuery will fade this out after 10 seconds.
+      This is a flash message with the "alert" class. Can be changed to scroll, or sit inline.  jQuery will fade this out after 10 seconds.
       #close
         x
     #wrapper
-      #top-bar
+      #top-bar.tabs
         #top-bar-inner
           %a{:href=>"/"}
             #logo
@@ -23,6 +23,27 @@
             %a{:href=>"/"} Home
             %a{:href=>"/basics"} Basics
             %a{:href=>"/"} Contact
+          #tabs
+            #primary-nav
+              %ul
+                %li
+                  %a
+                    Some Page
+                %li.active
+                  %a
+                    Active
+                %li
+                  %a
+                    Articles
+            #secondary-nav
+              %ul
+                %li
+                  %a{:href=>"#"} Profile
+                %li  
+                  %a{:href=>"#"} Settings
+                %li  
+                  %a{:href=>"#"} Logout
+              
       #content
         #main
           .box

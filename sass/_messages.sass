@@ -33,9 +33,9 @@
   
 .fieldWithErrors
   :background = "url('/images/icons/exclamation.png') no-repeat 1%" !error
+  :font-size 0.815em
   :line-height 1.6
   :padding 5px
-  :font-size 0.815em
   label
     :padding-left 20px
 
@@ -43,8 +43,8 @@
   :float left
   .fieldWithErrors
     :background-position 14%
-    :padding-left 20px
     :overflow hidden
+    :padding-left 20px
       
 .label
   .fieldWithErrors
@@ -65,22 +65,22 @@
     :background-position 1% 42%
     :padding-left 25px
 
-#errorExplanation 
-  :width 97%
+#errorExplanation
+  :background-color = !error
   :border = "2px solid" !red
+  :margin-bottom 20px
   :padding 7px
   :padding-bottom 12px
-  :margin-bottom 20px
-  :background-color = !error
-  h2 
-    :text-align left
+  :width 97%
+  h2
     +typeSans
-    :font-weight bold
-    :padding 10px 5px 10px 15px
-    :font-size 12px
-    :margin -7px
     :background-color = !red
     :color #fff
+    :font-size 12px
+    :font-weight bold
+    :margin -7px
+    :padding 10px 5px 10px 15px
+    :text-align left
   p 
     :padding 12px 10px 0
   ul

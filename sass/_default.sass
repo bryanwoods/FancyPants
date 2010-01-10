@@ -29,7 +29,7 @@ here additional padding-top specific to the element is also added aftwerward.
     #top-bar-inner
       +maxWidth
       :height 67px
-      :padding-top 8px
+      :padding 8px 10px 0
       #logo
         :float left
         :width 260px
@@ -44,7 +44,7 @@ here additional padding-top specific to the element is also added aftwerward.
           :margin 0 10px
       //tabbed nav for an admin like area
       #tabs
-        +roundedCorners
+        +roundedTop
         :background = !light
         :border-bottom = "1px solid" !light - #111
         :height 35px
@@ -59,7 +59,7 @@ here additional padding-top specific to the element is also added aftwerward.
           ul 
             :list-style none
             li
-              +roundedCorners
+              +roundedTop
               :cursor pointer
               :padding 7px 15px 8px
               &.active

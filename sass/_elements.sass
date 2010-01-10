@@ -9,7 +9,7 @@ form
     label
       +formLabel
     input
-      :border = "1px solid" !normal
+      :border = "1px solid" #bbb
       :font-size 1em
       :height 15px
       :padding 5px
@@ -17,6 +17,7 @@ form
       &:focus
         :background #FFFBE2
     textarea
+      :border = "1px solid" #bbb
       :width 100%
       &:focus
         :background #FFFBE2
@@ -42,27 +43,26 @@ form
         :border none
 
 //tables
-!alternating_table_color = !light
-!table_border = "1px solid" !normal
+!alternating_table_color = !lighter
+!table_border = "1px solid" !light
 !cell_padding = 0.5em
 
 table
   :border-bottom = !table_border
   :border-left = !table_border
-  thead
-    :width 100%
   caption
-    :color = !darker
+    :color = !darkest
     :margin-bottom 10px
   th
     :color = !lightest
-    :background = !darker
+    :background = !darkest
     :padding = !cell_padding
   td
     :border-top = !table_border
     :border-right = !table_border
     :padding = !cell_padding
-  //this class alternates gray and white rows
+  /*this class alternates gray and white rows, :nth-child only works in css3, so if
+  you want alternating to be backwards compatable, you'll need to roll another solution.*/
   &.alternating
     tr:nth-child(even)
       :background = !alternating_table_color
@@ -73,7 +73,7 @@ table
     :width 100%
     th
       :background none
-      :border-bottom = "1px solid" !normal
-      :color = !darker
+      :border-bottom = "1px solid" !light
+      :color = !darkest
     td
       :border 0

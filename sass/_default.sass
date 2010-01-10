@@ -15,13 +15,13 @@ here additional padding-top specific to the element is also added aftwerward.
   :width 50px
   :background #333*/
   
-  
 //basic layout elements
 #wrapper
+  +clearfix
   :width 100%
   #top-bar
-    :background = !lightest
-    :border-bottom = "1px solid" !lighter
+    :background = !lighter
+    :border-bottom = "1px solid" !light + #111
     :height 70px
     :margin-bottom 40px
     &.tabs
@@ -45,8 +45,7 @@ here additional padding-top specific to the element is also added aftwerward.
       //tabbed nav for an admin like area
       #tabs
         +roundedTop
-        :background = !light
-        :border-bottom = "1px solid" !light - #111
+        :background = !medium
         :height 35px
         :margin-top 67px
         li
@@ -54,6 +53,7 @@ here additional padding-top specific to the element is also added aftwerward.
           :display inline
           :margin-top 5px
           a
+            :color = !lightest
             :display block
         #primary-nav
           ul 
@@ -63,11 +63,13 @@ here additional padding-top specific to the element is also added aftwerward.
               +roundedTop
               :cursor pointer
               :padding 7px 15px 8px
+              a
+                :padding 0.15em 1em
               &.active
                 :background #fff
                 :border-bottom 1px solid #fff
-              a
-                :padding 0.15em 1em
+                a
+                  :color = !medium
         #secondary-nav
           :float right
           ul
@@ -81,8 +83,8 @@ here additional padding-top specific to the element is also added aftwerward.
   #content
     +maxWidth
     .tagline
-      :border-bottom = "1px solid" !lighter
-      :border-top = "1px solid " !lighter
+      :border-bottom = "1px solid" !light
+      :border-top = "1px solid " !light
       :margin-bottom 25px
       :padding 15px 0 5px
       :text-align center
@@ -101,7 +103,7 @@ here additional padding-top specific to the element is also added aftwerward.
 //content elements
 .box
   +clearfix
-  :border 1px solid #ccc
+  :border = 1px solid !light
   :margin 5px 0
   :padding 10px
   

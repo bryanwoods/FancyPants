@@ -4,5 +4,10 @@ $(document).ready(function() {
   
   $('#flashMessage').css('opacity', '.95');
   setTimeout(function() { $('#flashMessage').fadeOut('slow'); }, 10000);
+  
+  $('#close').click(function () {
+    $(this).parent().fadeOut('fast');
+  });
+  
 });
 //error message goes away on field focus

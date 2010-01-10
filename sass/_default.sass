@@ -68,7 +68,7 @@ here additional padding-top specific to the element is also added aftwerward.
                 :padding 0.15em 1em
               &.active
                 :background = !contentArea
-                :border-bottom 1px solid #fff
+                :border-bottom = "1px solid" !contentArea
                 a
                   :color = !medium
         #secondary-nav
@@ -104,6 +104,7 @@ here additional padding-top specific to the element is also added aftwerward.
 //content elements
 .box
   +clearfix
+  :background = !contentBox
   :border = 1px solid !light
   :margin 5px 0
   :padding 10px

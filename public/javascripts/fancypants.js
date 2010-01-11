@@ -10,4 +10,3 @@ $(document).ready(function() {
   });
   
 });
-//error message goes away on field focus

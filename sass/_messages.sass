@@ -6,28 +6,29 @@
   :top 0
   :right 0
   :z-index 10
-  :padding 15px 5px
+  :padding 10px 5px
   :text-align center
   :width 100%
   :overflow none
   .message
-    :float left
-    :padding 0 25px
-    :width 90%
+    :margin 0 auto
+    :margin-left 50px
+    :min-height 15px
+    :padding 2px 30px
   #close
     :border 2px solid
     :cursor pointer
-    :float right
-    :margin-right 10px
-    :margin-top -3px
+    :right 10px
+    :top 20%
     :padding 0 2px 5px
+    :position absolute
     :width 15px
   &.success
-    +flash(!success)
+    +flash(!success, "")
   &.alert
-    +flash(!alert)
+    +flash(!alert, "error")
   &.error
-    +flash(!error)
+    +flash(!error, "exclamation")
 
 //todo: figure out what's up with having to hack the font-sizes
 .errorMessage

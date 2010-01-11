@@ -71,7 +71,7 @@ you could do something like "!base + #777" etc.
 !success = #98F395
 
 //flash message color scheme
-=flash(!flashColor)
+=flash(!flashColor, !flashImage)
   :background = !flashColor
   :border-color = !flashColor - #666
   #close
@@ -80,4 +80,6 @@ you could do something like "!base + #777" etc.
     :color = !flashColor - #999
     &:hover
       :background = !flashColor
+  .message
+    :background = "url('/images/icons/" + !flashImage + ".png') no-repeat center left"
   

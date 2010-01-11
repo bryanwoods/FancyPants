@@ -27,8 +27,9 @@
 
 //todo: figure out what's up with having to hack the font-sizes
 .errorMessage
-  :color = !errorText
   :display none
+  p
+    :color = !errorText
   
 .fieldWithErrors
   :background = "url('/images/icons/exclamation.png') no-repeat 1%" !error

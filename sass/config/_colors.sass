@@ -1,6 +1,6 @@
 /*
 
-The easiest way to generate a new color scheme is to set a base color here.  
+The easiest way to generate a new color scheme is to simply set a base color here.  
 The color scheme is generated below based on relative values, and implemented 
 throughout. You can obviously tweak that below, or go through and set your colors 
 for each element by hand, but I've tried to set this up to give you a quick idea 
@@ -18,60 +18,65 @@ mustard plug - #A67000
 
 */
 
-//base color
+/****************************
+ Set up a basic color scheme
+****************************/
+
+//Base color
 !base = #034569
 
-//color scheme
+//Color scheme
 !darkest = !base - #888
-
 !darker = !base - #555
-  
 !dark = !base - #222
-
 !medium = !base
-
 !light = !base + #333
-  
 !lighter = !base + #666
-  
 !lightest = !base + #888
 
 
+/*******************************
+ Apply color scheme to elements
+*******************************/
+
+//Body elements
 !body = !base + #eee
 !topBar = !lighter
 !tabs = !medium
 !tabLink = !lightest
 !contentBox = #fff
 
-!link = !base + #003355 - #111
-
-//typography
+//Typography
 !h1 = !darkest
 !h2 = !medium
 !h3 = !light
 !h4 = !darkest
 !text = !darkest
 
-// border used on content box, pagination, etc
+!link = !base + #003355 - #111
+
+//Border used on content box, pagination, etc.
 !border = !light
 =borderThin
   :border = "1px solid" !border
 
-//Action btns, "Go," "Submit," etc.
-!action = #00ff00
 
-//error messages
+/**************************
+ Error and Flash Messages
+**************************/
+
+//Error messages
 !error = #F5D1C4
 !red = #ee1111
 !errorText = #FF0000
 
-//alert messages
+//Alert messages
 !alert = #fbf7b1
 
-//success messages
+//Success messages
 !success = #98F395
 
-//flash message color scheme
+//Flash message color scheme
 =flash(!flashColor, !flashImage)
   :background = !flashColor
   :border-color = !flashColor - #666

@@ -1,0 +1,7 @@
+v0.1 = has_many_edges
+
+Just a quick heads up, since you're here- I just opened up this project and haven't gotten to do a lot of testing so there are surely still bugs and issues. Most notably I haven't finished debugging IE, so: Not recommended for production!
+
+Feel free to fork and contribute, or post bugs and issues.
+
+FancyPants is a web app theme written in Haml and Sass, geared towards Ruby on Rails apps.

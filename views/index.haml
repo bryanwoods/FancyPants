@@ -5,7 +5,7 @@
     %title FancyPants
     %link{:title=>"Home", :type=>"text/html", :rel=>"Home", :href=>"/"}
     %link{:title=>"About", :type=>"text/html", :rel=>"About", :href=>"/about"}
-    %link{:title=>"Contact", :type=>"text/html", :rel=>"Contact", :href=>"/contact"}
+    %link{:title=>"Source", :type=>"text/html", :rel=>"Source", :href=>"/https://github.com/robertjwhitney/FancyPants"}
     %link{:rel=>"stylesheet", :type=>"text/css", :href=>"/stylesheets/style.css", :media=>"screen"}
   %body
     #wrapper
@@ -19,7 +19,7 @@
           #nav
             %a{:href=>"/"} Home
             %a{:href=>"/basics"} Basics
-            %a{:href=>"/contact"} Contact
+            %a{:href=>"https://github.com/robertjwhitney/FancyPants"} Source
       #content
         .tagline
           %h1 Hello there, my friend.
@@ -32,6 +32,20 @@
           .block
             %img{:src=>"/images/deep-sea-diver.jpg"}
         #main
+          .block
+            %h1
+              v0.1 = has_many_edges
+            %p
+              Just a quick heads up, since you're here- I just opened up this project and haven't gotten to do a lot of testing so there are surely still bugs and issues. Most notably I haven't finished debugging IE, so: 
+              %span.bold
+                Not recommended for production!  
+            %p
+              Feel free to contribute, or 
+              %a{:href=>"https://github.com/robertjwhitney/FancyPants/issues"}
+                post bugs and issues 
+              over at
+              %a{:href=>"https://github.com/robertjwhitney/FancyPants"}
+                github.
           .block
             %h1 
               All your styles are belonging to 

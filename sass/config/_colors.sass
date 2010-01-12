@@ -19,7 +19,7 @@ mustard plug - #A67000
 */
 
 //base color
-!base = #888
+!base = #034569
 
 //color scheme
 !darkest = !base - #888
@@ -36,19 +36,26 @@ mustard plug - #A67000
   
 !lightest = !base + #888
 
-//content area
-!contentArea = !base + #eee
+
+!body = !base + #eee
+!topBar = !lighter
+!tabs = !medium
+!tabLink = !lightest
 !contentBox = #fff
 
-//links
 !link = !base + #003355 - #111
 
-//other typography
+//typography
 !h1 = !darkest
 !h2 = !medium
 !h3 = !light
 !h4 = !darkest
 !text = !darkest
+
+// border used on content box, pagination, etc
+!border = !light
+=borderThin
+  :border = "1px solid" !border
 
 //Action btns, "Go," "Submit," etc.
 !action = #00ff00

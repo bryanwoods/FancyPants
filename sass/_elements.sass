@@ -44,17 +44,15 @@ form
 
 //tables
 !alternating_table_color = !lighter
-!table_border = "1px solid" !light
+!table_border = "1px solid" !border
 !cell_padding = 0.5em
 
 table
   :border-bottom = !table_border
   :border-left = !table_border
   caption
-    :color = !darkest
     :margin-bottom 10px
   th
-    :color = !lightest
     :background = !darkest
     :padding = !cell_padding
   td
@@ -73,7 +71,6 @@ table
     :width 100%
     th
       :background none
-      :border-bottom = "1px solid" !light
-      :color = !darkest
+      :border-bottom = "1px solid" !border
     td
       :border 0

@@ -3,15 +3,16 @@ Always add mixins first so styles can be overridden as needed. For instance:
 top-bar-inner has a +maxWidth mixin applied, which has a default padding of 0 15px, but
 here additional padding-top specific to the element is also added aftwerward.
 */
-  
+
+body
+  :background = !body
 //basic layout elements
 #wrapper
-  :background = !contentArea
   +clearfix
   :width 100%
   #top-bar
-    :background = !lighter
-    :border-bottom = "1px solid" !light + #111
+    :background = !topBar
+    :border-bottom = "1px solid" !topBar - #333
     :height 70px
     :margin-bottom 40px
     &.tabs
@@ -35,7 +36,7 @@ here additional padding-top specific to the element is also added aftwerward.
       //tabbed nav for an admin like area
       #tabs
         +roundedTop
-        :background = !medium
+        :background = !tabs
         :height 35px
         :margin-top 67px
         ul
@@ -46,7 +47,7 @@ here additional padding-top specific to the element is also added aftwerward.
           :display inline
           :margin-top 5px
           a
-            :color = !lightest
+            :color = !tabLink
             :display block
         #primary-nav
           ul li
@@ -56,10 +57,10 @@ here additional padding-top specific to the element is also added aftwerward.
             a
               :padding 0 1em
             &.active
-              :background = !contentArea
-              :border-bottom = "1px solid" !contentArea
+              :background = !body
+              :border-bottom = "1px solid" !body
               a
-                :color = !medium
+                :color = !tabs
         #secondary-nav
           :float right
           :margin-top 5px
@@ -92,20 +93,20 @@ here additional padding-top specific to the element is also added aftwerward.
 //content elements
 .box
   +clearfix
+  +borderThin
   :background = !contentBox
-  :border = 1px solid !light
   :margin 0 0 25px
   :padding 10px
   
 .actions
-  :border-top = "1px solid" !light
+  :border-top = "1px solid" !border
   :padding-top 20px
 
 //paginate styles based on default output of mislav's will_paginate plugin
 .paginate
   :float right
   a
-    :border = "1px solid" !light
+    +borderThin
     :margin 0 5px
     :padding 2px 1px 2px 5px
     :text-decoration none

@@ -14,37 +14,38 @@ body
     :background = !topBar
     :border-bottom = "1px solid" !topBar - #333
     :height 70px
+    :margin-bottom 3em
     &.tabs
       :height 110px
     #top-bar-inner
       +maxWidth
       :height 67px
-      :padding 8px 15px 0
+      :padding 0.6em 1.15em 0
       #logo
         :float left
         :width 260px
       .tagline
         :float left
-        :padding-top 23px
+        :padding-top 1.8em
         :width 200px
       #nav
         :float right
-        :padding-top 18px
+        :padding-top 1.25em
         a
-          :margin 0 10px
+          :margin 0 0.6em
       //tabbed nav for an admin like area
       #tabs
         +roundedTop
         :background = !tabs
         :height 35px
-        :margin-top 67px
+        :margin-top 5.25em
         ul
           :list-style none
           :margin 0
         li
           :float left
           :display inline
-          :margin-top 5px
+          :margin-top 0.3em
           a
             :color = !tabLink
             :display block
@@ -52,7 +53,7 @@ body
           ul li
             +roundedTop
             :cursor pointer
-            :padding 6px 15px 8px
+            :padding 0.4em 1em 0.5em
             a
               :padding 0 1em
             &.active
@@ -62,29 +63,29 @@ body
                 :color = !tabs
         #secondary-nav
           :float right
-          :margin-top 5px
+          :margin-top 0.4em
           ul li
             :float left
-            :padding 0 10px
+            :padding 0 0.5em
             a
               :padding 0.1em 0.5em
         
   #content
     +maxWidth
     .tagline
-      :border-bottom = "1px solid" !light
-      :border-top = "1px solid " !light
-      :margin-bottom 25px
-      :padding 15px 0 5px
+      :border-bottom = "1px solid" !border
+      :border-top = "1px solid " !border
+      :margin-bottom 2em
+      :padding 1em 0 0.3em
       :text-align center
     #sidebar
       :float left
       :width 315px
-      :margin 0 5px
+      :margin 0 0.35em
     #main
       :float left
       :width 625px
-      :margin 0 5px
+      :margin 0 0.35em
     .block
       :min-height 1px
   #footer
@@ -94,20 +95,20 @@ body
   +clearfix
   +borderThin
   :background = !contentBox
-  :margin 0 0 25px
-  :padding 10px
+  :margin 0 0 1.75em
+  :padding 0.8em
   
 .actions
   :border-top = "1px solid" !border
-  :padding-top 20px
+  :padding-top 1.4em
 
 //paginate styles based on default output of mislav's will_paginate plugin
 .paginate
   :float right
   a
     +borderThin
-    :margin 0 5px
-    :padding 2px 1px 2px 5px
+    :margin 0 0.4em
+    :padding 0.08em 0.04em 0.08em 0.35em
     :text-decoration none
     &:hover
       :background = !link
@@ -117,10 +118,10 @@ body
     :background none
     :border none
   .current
-    :color #fff
+    :color = !contentBox
     :background = !link
-    :padding 2px 1px 2px 5px
-    :margin 0 5px
+    :padding 0.08em 0.04em 0.08em 0.35em
+    :margin 0 0.35em
   .disabled
     :border none
     :color #888

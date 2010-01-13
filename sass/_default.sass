@@ -8,7 +8,6 @@ body
   :background = !body
 //basic layout elements
 #wrapper
-  +clearfix
   :width 100%
   #top-bar
     :background = !topBar
@@ -87,12 +86,11 @@ body
       :width 625px
       :margin 0 0.35em
     .block
-      :min-height 1px
+      :margin-bottom 2.5em
   #footer
   
 //content elements
 .box
-  +clearfix
   +borderThin
   :background = !contentBox
   :margin 0 0 1.75em

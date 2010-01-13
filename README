@@ -1,6 +1,6 @@
-v0.1 = has_many_edges
+v0.2 - Use with caution
 
-Just a quick heads up, since you're here- I just opened up this project and haven't gotten to do a lot of testing so there are surely still bugs and issues. Most notably I haven't finished debugging IE, so: Not recommended for production!
+Just a quick heads up, since you're here- I just opened up this project and haven't gotten to do a lot of testing so there are surely still bugs and issues. Most notably there are still some IE6 bugs with file type inputs, and buttons, so: Not recommended for production if you need to support IE6, unless you want to make the fixes (please do!).
 
 Feel free to fork and contribute, or post bugs and issues.
 

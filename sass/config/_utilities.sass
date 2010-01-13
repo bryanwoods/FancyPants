@@ -9,13 +9,13 @@
 
 //Sass Definition of a Clearfix
 =clearfix
-  :overflow auto
-  :overflow -moz-scrollbars-none
-  // This makes ie6 get layout
-  :display inline-block
-  // and this puts it back to block
-  &
+  :*display inline-block
+  &:after
+    :content " "
     :display block
+    :height 0
+    :clear both
+    :visibility hidden
     
 /*
 Since we're using Sass you should add the clearfix to the nessicary id's and classes 

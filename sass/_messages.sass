@@ -1,7 +1,9 @@
 #flashMessage
+  //IE6 will only apply class colors to "relative" positioned divs
+  :background = !light
   /*
-  set position to "fixed" if you want the message to follow scroll, 
-  or "relative" if you prefer to have it inline.
+  Set position to "fixed" if you want the message to follow scroll, or "relative" 
+  if you prefer to have it inline. Currently, only absolute works for IE6
   */
   :position absolute
   :border-bottom 2px solid

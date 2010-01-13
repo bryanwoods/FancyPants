@@ -71,6 +71,7 @@ body
               :padding 0.3em 0.5em
         
   #content
+    +clearfix
     +maxWidth
     .tagline
       :border-bottom = "1px solid" !border
@@ -89,6 +90,14 @@ body
     .block
       :margin-bottom 2.5em
   #footer
+    :background = !topBar
+    :border-top = "1px solid" !topBar - #333
+    :padding 2em 0 3em
+    :text-align center
+    p
+      :color = !light
+    a
+      :margin 0 0.6em
   
 //content elements
 .box

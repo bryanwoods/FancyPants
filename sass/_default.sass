@@ -18,8 +18,9 @@ body
       :height 110px
     #top-bar-inner
       +maxWidth
-      :height 67px
       :padding 0.6em 1.15em 0
+      //IE6 hack (top padding not being respected)
+      :*margin-top 0.6em
       #logo
         :float left
         :width 260px

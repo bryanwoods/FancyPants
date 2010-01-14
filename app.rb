@@ -13,6 +13,6 @@ get '/' do
   haml :index
 end
 
-get '/basics' do
-  haml :basics
+get '/:view' do
+  haml :"#{params[:view]}"
 end

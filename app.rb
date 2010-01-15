@@ -3,6 +3,7 @@
 require 'rubygems'
 require 'sinatra'
 require 'haml'
+require 'sass'
 
 get '/stylesheets/:name.css' do
   content_type 'text/css', :charset => 'utf-8'

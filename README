@@ -1,6 +1,8 @@
-v0.2 - Use with caution
+v0.3 960gs
+ 
+Just a quick heads up, since you're here- I just opened up this project and haven't gotten to do a lot of testing so there are surely still bugs and issues. It's changing everyday, so I wouldn't put it into production yet unless you were planning on doing work and contributing back.
 
-Just a quick heads up, since you're here- I just opened up this project and haven't gotten to do a lot of testing so there are surely still bugs and issues. Most notably there are still some IE6 bugs with file type inputs, and buttons, so: Not recommended for production if you need to support IE6, unless you want to make the fixes (please do!).
+This version includes conformance to a 12 column 960gs, and Sass based inheritance for font sizes.
 
 Feel free to fork and contribute, or post bugs and issues.
 

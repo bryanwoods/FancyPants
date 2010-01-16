@@ -13,22 +13,22 @@ body
     :background = !topBar
     :border-bottom = "1px solid" !topBar - #333
     :height 70px
-    :margin-bottom 3em
+    :margin-bottom 40px
     &.tabs
       :height 110px
     #top-bar-inner
       +maxWidth
       +topBarType
-      :padding 0.6em 1.15em 0
+      :padding 10px 15px 0
       //IE6 hack (top padding not being respected)
-      :*margin-top 0.6em
+      :*margin-top 8px
       #logo
         +logoType
         :float left
         :width 260px
       .tagline
         :float left
-        :padding-top 1.8em
+        :padding-top 23px
         :width 200px
       #nav
         :float right
@@ -40,7 +40,7 @@ body
         +roundedTop
         :background = !tabs
         :height 35px
-        :margin-top 5.25em
+        :margin-top 66px
         ul
           :list-style none
           :margin 0
@@ -86,12 +86,12 @@ body
       :text-align center
     #sidebar
       :float left
-      :width 315px
-      :margin 0 0.35em
+      :width 300px
+      :margin 0 10px
     #main
       :float left
-      :width 625px
-      :margin 0 0.35em
+      :width 620px
+      :margin 0 10px
     .block
       :margin-bottom 2.5em
   #footer
@@ -108,7 +108,7 @@ body
 //content elements
 .box
   +borderThin
-  :background = !contentBox
+  //:background = !contentBox
   :margin 0 0 2.25em
   :padding 0.2em 0.8em 1.25em
   

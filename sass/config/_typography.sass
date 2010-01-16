@@ -4,14 +4,17 @@
 =typeSans
   :font-family "Verdana", sans-serif
 
+//set a base font size
+!baseFontSize = 0.815em
+
 body
   +typeSans
-  :font-size 0.815em
+  :font-size = !baseFontSize
     
 h1
   +typeSerif
   :color = !h1
-  :font-size 2.2em
+  :font-size = !baseFontSize * 2.5
   :margin 0.25em 0 0.5em
   :letter-spacing 1px
   :line-height 1.1em
@@ -19,39 +22,37 @@ h1
 h2
   +typeSerif
   :color = !h2
-  :font-size 1.815em
+  :font-size = !baseFontSize * 2
   :text-transform uppercase
-  :line-height 1.4em
+  :line-height 1.4
   :letter-spacing 3px
   
 h3
   :color = !h3
-  :font-size 1.4em
-  
-h4
-  :color = !h4
-  :font-size 1em
+  :font-size = !baseFontSize * 1.5
 
 a
   :color = !link
   :text-decoration none
   &:hover
     :text-decoration underline
-  
-p, table, .paginate, label
+
+p, table, .paginate
   :color = !text
-  :line-height 1.6em
-  :margin 0.5em 0 1.5em
+  :line-height 1.6
+  
+p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset
+  :margin-bottom 20px
   
 th
-  :font-size 1.15em
+  :font-size = !baseFontSize * 1.5
   :font-weight bold
     
 ul
   :list-style-type circle
-  :margin 0.5em 0 1.5em 1.3em
+  :margin 0 0 20px 15px
   li
-    :margin 1em 0
+    :margin 20px 0
 
 .bold
   :font-weight bold
@@ -65,26 +66,22 @@ ul
 =logoType
   +typeSerif
   :color = !logo
-  :font-size 3.7em
+  :font-size = !baseFontSize * 4.5
   
 =topBarType
   .tagline
     :color = !lighter - #222
-    :font-size 1em
+    :font-size = !baseFontSize
   #nav
-    :font-size 1.3em
+    :font-size = !baseFontSize * 1.75
     
 =primaryNavType
-  :font-size 1.25em
+  :font-size = !baseFontSize * 1.5
 
 =secondaryNavType
-  :font-size 1em
+  :font-size = !baseFontSize * 1.25
 
 =contentTaglineType 
   h1
-    :font-size 3.5em
+    :font-size = !baseFontSize * 4.5
     :margin 0
-      
-.info
-  :font-size 0.85em
-  :color #999

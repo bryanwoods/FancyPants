@@ -3,14 +3,14 @@
   :background = !light
   /*
   Set position to "fixed" if you want the message to follow scroll, or "relative" 
-  if you prefer to have it inline. Currently, only absolute works for IE6
+  if you prefer to have it inline. Currently, only absolute works for IE6.
   */
   :position absolute
   :border-bottom 2px solid
   :top 0
   :right 0
   :z-index 10
-  :padding 0.8em 0.35em
+  :padding 10px 5px
   :text-align center
   :width 100%
   :overflow hidden
@@ -18,13 +18,13 @@
     :margin 0 auto
     :margin-left 1.5em
     :min-height 15px
-    :padding 0.08em 3em
+    :padding 0 40px
   #close
     :border 2px solid
     :cursor pointer
     :right 10px
     :top 20%
-    :padding 0 0.15em 0.35em
+    :padding 0 2px 5px
     :position absolute
     :width 15px
   &.success
@@ -44,41 +44,41 @@
   :line-height 1.6
   :padding 5px
   label
-    :padding-left 1.4em
+    :padding-left 20px
 
 .checkbox, .radio
   :float left
   .fieldWithErrors
     :background-position 14%
     :overflow hidden
-    :padding-left 1.4em
+    :padding-left 20px
+    :padding-bottom 2px
       
 .label
   .fieldWithErrors
     label 
-      :padding 0.4em 0
+      :padding 10px 0
     
 .file
   .fieldWithErrors
     :background-position 1% 42%
-    :padding-left 2em
+    :padding-left 30px
 
 #errorExplanation
   :background-color = !error
   :border = "2px solid" !red
-  :margin-bottom 1.4em
-  :padding-bottom 0.8em
-  :width 97%
+  :margin-bottom 20px
+  :padding-bottom 10px
   h2
     +typeSans
     :background-color = !red
     :color #fff
     :font-size 12px
     :font-weight bold
-    :padding 0.8em 0.35em 0.8em 1.75em
+    :padding 10px 20px
     :margin 0
     :text-align left
   p 
-    :padding 0.8em 1.75em 0
+    :padding 10px 20px 0
   ul
-    :padding-left 1.75em
+    :padding-left 20px

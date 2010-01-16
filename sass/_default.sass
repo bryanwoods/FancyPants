@@ -15,7 +15,7 @@ body
     :height 70px
     :margin-bottom 40px
     &.tabs
-      :height 110px
+      :height 105px
     #top-bar-inner
       +maxWidth
       +topBarType
@@ -33,14 +33,14 @@ body
         :width 200px
       #nav
         :float right
-        :padding-top 1.25em
+        :padding-top 20px
         a
-          :margin 0 0.6em
+          :margin 0 10px
       //tabbed nav for an admin like area
       #tabs
         +roundedTop
         :background = !tabs
-        :height 35px
+        :height 30px
         :margin-top 66px
         ul
           :list-style none
@@ -48,7 +48,7 @@ body
         li
           :float left
           :display inline
-          :margin-top 0.2em
+          :margin-top 3px
           a
             :color = !tabLink
             :display block
@@ -57,7 +57,7 @@ body
           ul li
             +roundedTop
             :cursor pointer
-            :padding 0.4em 1em 0.7em
+            :padding 4px 10px 11px
             a
               :padding 0 1em
             &.active
@@ -68,7 +68,7 @@ body
         #secondary-nav
           +secondaryNavType
           :float right
-          :margin-top 0.2em
+          :margin-top 0.1em
           ul li
             :float left
             :padding 0 0.5em

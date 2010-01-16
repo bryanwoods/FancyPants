@@ -1,6 +1,24 @@
 !!!
 %html{:xmlns=>"http://www.w3.org/1999/xhtml", "xml:lang"=>"en", :lang=>"en"}
   %head
+    :javascript
+      var gOverride = {
+        urlBase: 'http://gridder.andreehansson.se/releases/latest/',
+        gColor: '#ee0000',
+        gColumns: 12,
+        gOpacity: 0.2,
+        gWidth: 10,
+        pColor: '#0000ee',
+        pHeight: 15,
+        pOffset: 0,
+        pOpacity: 0.2,
+        center: true,
+        gEnabled: true,
+        pEnabled: true,
+        setupEnabled: false,
+        fixFlash: true,
+        size: 960
+      };
     %meta{"http-equiv"=>"Content-Type", :content=>"text/html; charset=utf-8"}
     %title FancyPants
     %link{:rel=>"stylesheet", :type=>"text/css", :href=>"/stylesheets/style.css", :media=>"screen"}

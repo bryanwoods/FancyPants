@@ -18,10 +18,12 @@ body
       :height 110px
     #top-bar-inner
       +maxWidth
+      +topBarType
       :padding 0.6em 1.15em 0
       //IE6 hack (top padding not being respected)
       :*margin-top 0.6em
       #logo
+        +logoType
         :float left
         :width 260px
       .tagline
@@ -50,6 +52,7 @@ body
             :color = !tabLink
             :display block
         #primary-nav
+          +primaryNavType
           ul li
             +roundedTop
             :cursor pointer
@@ -62,6 +65,7 @@ body
               a
                 :color = !tabs
         #secondary-nav
+          +secondaryNavType
           :float right
           :margin-top 0.2em
           ul li
@@ -74,6 +78,7 @@ body
     +clearfix
     +maxWidth
     .tagline
+      +contentTaglineType
       :border-bottom = "1px solid" !border
       :border-top = "1px solid " !border
       :margin-bottom 2em

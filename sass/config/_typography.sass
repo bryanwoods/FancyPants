@@ -10,21 +10,19 @@
 body
   +typeSans
   :font-size = !baseFontSize
+  :line-height 20px
     
 h1
   +typeSerif
   :color = !h1
   :font-size = !baseFontSize * 2.5
-  :margin 0.25em 0 0.5em
   :letter-spacing 1px
-  :line-height 1.1em
   
 h2
   +typeSerif
   :color = !h2
   :font-size = !baseFontSize * 2
   :text-transform uppercase
-  :line-height 1.4
   :letter-spacing 3px
   
 h3
@@ -41,11 +39,8 @@ p, table, .paginate
   :color = !text
   :line-height 1.6
   
-p, dl, hr, h1, ol, ul, pre, table, address, fieldset
+p, dl, hr, h1, h2, h3 ol, ul, pre, table, address, fieldset
   :margin-bottom 20px
-
-h2,h3,h4
-  :margin-bottom 10px
   
 th
   :font-size = !baseFontSize * 1.5

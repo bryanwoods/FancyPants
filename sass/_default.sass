@@ -12,14 +12,15 @@ body
   #top-bar
     :background = !topBar
     :border-bottom = "1px solid" !topBar - #333
-    :height 75px
+    :height 80px
     :margin-bottom 30px
+    :padding-top 10px
     &.tabs
-      :height 105px
+      :height 100px
     #top-bar-inner
       +maxWidth
       +topBarType
-      :padding 10px 20px 0
+      :padding 20px 20px 0
       //IE6 hack (top padding not being respected)
       :*margin-top 10px
       :width 940px
@@ -29,11 +30,11 @@ body
         :width 260px
       .tagline
         :float left
-        :padding-top 23px
+        :padding-top 5px
         :width 200px
       #nav
         :float right
-        :padding-top 20px
+        :padding-top 5px
         a
           :margin 0 10px
       //tabbed nav for an admin like area
@@ -41,7 +42,7 @@ body
         +roundedTop
         :background = !tabs
         :height 30px
-        :margin-top 66px
+        :margin-top 50px
         ul
           :list-style none
           :margin 0
@@ -66,7 +67,7 @@ body
         #secondary-nav
           +secondaryNavType
           :float right
-          :margin 5px 10px
+          :margin 2px 10px
           ul li
             :float left
             :padding 0 10px
@@ -78,8 +79,8 @@ body
       +contentTaglineType
       :border-bottom = "1px solid" !border
       :border-top = "1px solid " !border
-      :margin-bottom 25px
-      :padding 15px 0 5px
+      :margin-bottom 20px
+      :padding 35px 0 5px
       :text-align center
     #sidebar
       :float left
@@ -90,7 +91,7 @@ body
       :width 620px
       :margin 0 10px
     .block
-      :padding-bottom 20px
+      :padding 10px 0
   #footer
     :background = !topBar
     :border-top = "1px solid" !topBar - #333

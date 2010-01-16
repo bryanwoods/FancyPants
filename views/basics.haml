@@ -111,7 +111,7 @@
               %p
               %br
                 %span.submit
-                  %input{:type=>"submit", :value=>"submit"}
+                  %input{:type=>"submit", :value=>"Submit"}
                   or
                   %a{:href=>"#"}
                     clear
@@ -185,8 +185,8 @@
                         Please choose a file to upload
             %p
               %br
-                .submit
-                  %input.submit{:type=>"submit", :value=>"submit"}
+                %span.submit
+                  %input.submit{:type=>"submit", :value=>"Submit"}
                   or
                   %a{:href=>"#"}
                     clear
@@ -320,7 +320,7 @@
                     delete
                   %a{:href=>"#"}
                     settings                    
-            .actions
+            .actions.submit
               %select
                 %option{:value=>"0"}
                   Choose an action...

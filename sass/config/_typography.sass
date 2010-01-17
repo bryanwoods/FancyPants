@@ -5,18 +5,24 @@
   :font-family "Verdana", sans-serif
 
 //set a base font size
-!baseFontSize = 0.815em
+!baseFontSize = 12px
+!baseLine = 20px
+
+=baseLine
+  :margin-bottom = !baseLine
 
 body
   +typeSans
   :font-size = !baseFontSize
-  :line-height 20px
+  :line-height = !baseLine
     
 h1
+  //+baseLine
   +typeSerif
   :color = !h1
   :font-size = !baseFontSize * 2.5
   :letter-spacing 1px
+  :line-height = !baseLine * 2
   
 h2
   +typeSerif
@@ -39,7 +45,7 @@ p, table, .paginate
   :color = !text
   
 p, dl, hr, h1, h2, h3 ol, ul, pre, table, address, fieldset
-  :margin-bottom 20px
+  +baseLine
   
 th
   :font-size = !baseFontSize * 1.5
@@ -47,9 +53,11 @@ th
     
 ul
   :list-style-type circle
-  :margin 0 0 30px 15px
+  :margin = !baseLine/2 0 !baseLine*1.5
+  :margin-left 15px
   li
-    :margin 10px 0
+    :line-height = !baseLine
+    :margin = !baseLine/2 0
 
 .bold
   :font-weight bold
@@ -63,22 +71,23 @@ ul
 =logoType
   +typeSerif
   :color = !logo
-  :font-size = !baseFontSize * 4.5
+  :font-size = !baseFontSize * 4
   
 =topBarType
   .tagline
     :color = !lighter - #222
     :font-size = !baseFontSize
   #nav
-    :font-size = !baseFontSize * 1.75
+    :font-size = !baseFontSize * 1.5
     
 =primaryNavType
   :font-size = !baseFontSize * 1.5
 
 =secondaryNavType
-  :font-size = !baseFontSize * 1.25
+  :font-size = !baseFontSize
 
 =contentTaglineType 
   h1
     :font-size = !baseFontSize * 4.5
-    :margin 0
+    :line-height = !baseLine * 2.6
+    :margin-bottom 0

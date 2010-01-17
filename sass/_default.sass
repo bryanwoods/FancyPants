@@ -76,11 +76,11 @@ body
     +clearfix
     +maxWidth
     .tagline
+      +baseLine
       +contentTaglineType
       :border-bottom = "1px solid" !border
       :border-top = "1px solid " !border
-      :margin-bottom 20px
-      :padding 35px 0 5px
+      :padding-top 20px
       :text-align center
     #sidebar
       :float left
@@ -95,7 +95,7 @@ body
   #footer
     :background = !topBar
     :border-top = "1px solid" !topBar - #333
-    :margin-top 30px
+    :margin-top 20px
     :padding 25px 40px
     :text-align center
     p
@@ -105,9 +105,9 @@ body
   
 //content elements
 .box
+  +baseLine
   +borderThin
   :background = !contentBox
-  :margin 0 0 20px
   :padding 10px
   
 .actions

@@ -58,8 +58,9 @@ table
     :border-top = !table_border
     :border-right = !table_border
     :padding = !cell_padding
-  /*this class alternates gray and white rows, :nth-child only works in css3, so if
-  you want alternating to be backwards compatable, you'll need to roll another solution.*/
+  //
+    this class alternates gray and white rows, :nth-child only works in css3, so if
+    you want alternating to be backwards compatable, you'll need to roll another solution.
   &.alternating
     tr:nth-child(even)
       :background = !alternating_table_color
